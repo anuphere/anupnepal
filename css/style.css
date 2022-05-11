@@ -12,6 +12,9 @@ body{
     margin-left: 15%;
     position: absolute;
     margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .image, .Name, .details, .resume{
