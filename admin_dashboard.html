@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin_Dashboard</title>
+</head>
+
+<body>
+    <h1>WELCOME ANUP</h1>  <a href="http://localhost/my_website/show_tables.php">View Tables</a>
+    <form action="change_pass.php" method="post">
+        <h3>Change Password</h3>
+        <input type="password" placeholder="Old Password" name="old_pass" required/>
+        <input type="password" placeholder="New Password" name="new_pass" required/>
+        <input type="password" placeholder="Confirm New Password" name="new_pass_confirm" required/>
+        <button type="submit">Change Password</button>
+        
+    </form>
+
+    <hr>
+    
+    <form action="add_service.php" method="post">
+        <h3>Add Service</h3>
+        <input type="text" placeholder="Service" name="service" required>
+        <button type="submit">Add Service</button>
+    </form>
+    <hr>
+
+    <form action="add_skills.php" method="post">
+        <h3>Add Skill</h3>
+        <input type="text" placeholder="Skill" name="skills" required>
+        <input type="number" placeholder="Rate yourself (%)" name="ratings">
+        <button type="submit">Add Skill</button>
+    </form>
+    <hr>
+    <form action="add_project.php" method="post" enctype="multipart/form-data">
+        <h3>Add Projects</h3>
+        <input type="text" placeholder="Title" name="project_title" required><br><br>
+        <textarea placeholder="Short description of the project" name="project_des" required></textarea><br><br>
+        <input type="file" accept="image/*" name="files[]" required><br><br>
+        <input type="text" placeholder="Link to the project" name="project_link"><br><br>
+        <input type="submit" name="submit" value="Add Project"></input>
+    </form>
+    <hr>
+
+    <form action="add_awards.php" method="post" enctype="multipart/form-data">
+        <h3>Add Awards</h3>
+        <input type="text" placeholder="Title" name="title_award" required /><br><br>
+        <textarea placeholder="Short description of the award" name="descp_award" required></textarea><br><br>
+        <input type="file" accept="image/*" name="filess[]" required/><br><br>
+        <input type="text" placeholder="Link to the award" name="award_link"/><br><br>
+        <input type="submit" name="submit" value="Add Award"></input>
+    </form>
+</body>
+</html>
